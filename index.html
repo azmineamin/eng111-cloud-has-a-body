@@ -246,15 +246,13 @@ nav .ar{color:#334155}
 .flow .arrow{color:var(--acc)}
 .next{bottom:calc(2.5vh + env(safe-area-inset-bottom,0px))}
 .water.mud::before{background:#a1620722}.water.mud::after{background:#71431214}
-/* ---- frosted panels so text stays readable over the brighter 3D background ---- */
-h2{align-self:flex-start;background:rgba(255,255,255,.8);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);padding:.08em .32em .14em;margin-left:-.32em;border-radius:.22em;box-shadow:0 8px 28px rgba(15,23,42,.12)}
-.slide>h1:not(.ttl){align-self:flex-start;background:rgba(255,255,255,.8);backdrop-filter:blur(8px);padding:.06em .3em .12em;margin-left:-.3em;border-radius:.2em;box-shadow:0 8px 28px rgba(15,23,42,.12)}
-.tag{align-self:flex-start;background:rgba(255,255,255,.85);padding:.35em .7em;margin-left:-.7em;border-radius:10px}
-.r:has(> .bar),div:has(> svg.chart),.r:has(> .tank),ul.pts.lg,.slide>.grid>ul.pts,.grid>div>ul.pts.sm.r,.lines,.slide>.sub,.slide>.note,.r:has(> .orb)+.r{background:rgba(255,255,255,.84);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border:1px solid var(--line);border-radius:18px;padding:1.8vh 1.4vw;box-shadow:0 10px 34px rgba(15,23,42,.14)}
-.slide>.sub,.slide>.note,.lines{align-self:flex-start}
+/* ---- readability: soft light band at the top for headings; panels only for charts and lists ---- */
+#veil{background:linear-gradient(180deg,rgba(244,247,252,.92) 0%,rgba(244,247,252,.86) 30%,rgba(244,247,252,.35) 48%,rgba(244,247,252,0) 62%),linear-gradient(90deg,rgba(244,247,252,.5),rgba(244,247,252,0) 45%)}
+.r:has(> .bar),div:has(> svg.chart),.r:has(> .tank),ul.pts.lg,.slide>.grid>ul.pts,.grid>div>ul.pts.sm.r,.lines,.qt,.r:has(> .orb)+.r{background:rgba(255,255,255,.88);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border:1px solid var(--line);border-radius:18px;padding:1.8vh 1.4vw;box-shadow:0 10px 34px rgba(15,23,42,.14)}
+.qt{border-left:4px solid var(--hot);border-radius:0 18px 18px 0}
+.lines{align-self:flex-start}
 .r:has(> .orb){background:none;border:0;box-shadow:none}
-.lb,.vl{stroke:#fff;stroke-width:4px;paint-order:stroke;stroke-linejoin:round}
-.qt{background:rgba(255,255,255,.86);backdrop-filter:blur(8px);border-radius:0 18px 18px 0;padding:1.4vh 1.4vw 1.4vh 1.2em;box-shadow:0 10px 34px rgba(15,23,42,.14)}
+.thanks .titlebox h1.ttl{font-size:clamp(52px,8vw,140px)}
 
 </style>
 </head>
@@ -288,7 +286,7 @@ h2{align-self:flex-start;background:rgba(255,255,255,.8);backdrop-filter:blur(8p
 
 <!-- 2 ROADMAP -->
 <section class="slide">
-  <div class="who wE"><em>01 · ETHOS</em>Md. Azmine Amin Mormo</div>
+  <div class="who wE"><em>01</em>Md. Azmine Amin Mormo</div>
   <div class="tag r" style="--i:0">Roadmap · 9 minutes</div>
   <h2 class="r" style="--i:1">Three speakers. <span class="grad">One argument.</span></h2>
   <div class="grid">
@@ -307,8 +305,7 @@ h2{align-self:flex-start;background:rgba(255,255,255,.8);backdrop-filter:blur(8p
 
 <!-- 3 HOOK / BACKGROUND -->
 <section class="slide">
-  <div class="who wE"><em>01 · ETHOS</em>Md. Azmine Amin Mormo</div>
-  <div class="appeal ethos r" style="--i:0"><b>ETHOS 1</b><span>Renowned sources</span><em>Background of the problem</em></div>
+  <div class="who wE"><em>01</em>Md. Azmine Amin Mormo</div>
   <div class="tag r" style="--i:0">Background</div>
   <h2 class="r" style="--i:1">You used AI today.<br><span class="grad">Where did it actually happen?</span></h2>
   <div class="grid">
@@ -329,8 +326,7 @@ h2{align-self:flex-start;background:rgba(255,255,255,.8);backdrop-filter:blur(8p
 
 <!-- 4 RENOWNED SOURCES -->
 <section class="slide">
-  <div class="who wE"><em>01 · ETHOS</em>Md. Azmine Amin Mormo</div>
-  <div class="appeal ethos r" style="--i:0"><b>ETHOS 1</b><span>Renowned sources</span><em>Background of the problem</em></div>
+  <div class="who wE"><em>01</em>Md. Azmine Amin Mormo</div>
   <div class="tag r" style="--i:0">What the research says</div>
   <h2 class="r" style="--i:1">Not opinion. <span class="grad">Peer-reviewed evidence.</span></h2>
   <div class="grid">
@@ -352,8 +348,7 @@ h2{align-self:flex-start;background:rgba(255,255,255,.8);backdrop-filter:blur(8p
 
 <!-- 5 FAIR-MINDED + URGENCY -->
 <section class="slide">
-  <div class="who wE"><em>01 · ETHOS</em>Md. Azmine Amin Mormo</div>
-  <div class="appeal ethos r" style="--i:0"><b>ETHOS 2</b><span>Sincere &amp; fair-minded presentation</span><em>Why it needs immediate action</em></div>
+  <div class="who wE"><em>01</em>Md. Azmine Amin Mormo</div>
   <div class="tag r" style="--i:0">The full picture</div>
   <h2 class="r" style="--i:1">AI is not the villain. <span class="grad">Unchecked growth is.</span></h2>
   <div class="grid">
@@ -380,8 +375,7 @@ h2{align-self:flex-start;background:rgba(255,255,255,.8);backdrop-filter:blur(8p
 
 <!-- 6 CAUSE 1: SCALE -->
 <section class="slide">
-  <div class="who wL"><em>02 · LOGOS</em>Md. Faisal Sheikh</div>
-  <div class="appeal logos r" style="--i:0"><b>LOGOS 1</b><span>Facts &amp; statistics</span><em>Causes behind the problem</em></div>
+  <div class="who wL"><em>02</em>Md. Faisal Sheikh</div>
   <div class="tag r" style="--i:0">Cause 1 · Scale</div>
   <h2 class="r" style="--i:1">One prompt is tiny. <span class="grad">Billions are not.</span></h2>
   <div class="r" style="--i:2">
@@ -409,8 +403,7 @@ h2{align-self:flex-start;background:rgba(255,255,255,.8);backdrop-filter:blur(8p
 
 <!-- 7 CAUSE 2: CHIPS + MONEY -->
 <section class="slide">
-  <div class="who wL"><em>02 · LOGOS</em>Md. Faisal Sheikh</div>
-  <div class="appeal logos r" style="--i:0"><b>LOGOS 1</b><span>Facts &amp; statistics</span><em>Causes behind the problem</em></div>
+  <div class="who wL"><em>02</em>Md. Faisal Sheikh</div>
   <div class="tag r" style="--i:0">Cause 2 · The money race</div>
   <h2 class="r" style="--i:1;font-size:clamp(28px,3.9vw,60px);max-width:none">Thousands of chips. <span class="grad">Hundreds of billions.</span></h2>
   <div class="grid" style="grid-template-columns:1fr 1.15fr;align-items:center">
@@ -439,8 +432,7 @@ h2{align-self:flex-start;background:rgba(255,255,255,.8);backdrop-filter:blur(8p
 
 <!-- 8 IMPACT: GRID + WATER -->
 <section class="slide">
-  <div class="who wL"><em>02 · LOGOS</em>Md. Faisal Sheikh</div>
-  <div class="appeal logos r" style="--i:0"><b>LOGOS 2</b><span>Comparison</span><em>Impacts of the problem</em></div>
+  <div class="who wL"><em>02</em>Md. Faisal Sheikh</div>
   <div class="tag r" style="--i:0">Impact · Power &amp; water</div>
   <h2 class="r" style="--i:1">The grid and the tap <span class="grad">are paying the bill.</span></h2>
   <div class="grid" style="grid-template-columns:1.3fr 1fr;align-items:center">
@@ -473,8 +465,7 @@ h2{align-self:flex-start;background:rgba(255,255,255,.8);backdrop-filter:blur(8p
 
 <!-- 9 COMPARISON: WHO PAYS -->
 <section class="slide">
-  <div class="who wL"><em>02 · LOGOS</em>Md. Faisal Sheikh</div>
-  <div class="appeal logos r" style="--i:0"><b>LOGOS 2</b><span>Comparison</span><em>Who is affected: different demographics</em></div>
+  <div class="who wL"><em>02</em>Md. Faisal Sheikh</div>
   <div class="tag r" style="--i:0">Comparison · Who pays</div>
   <h2 class="r" style="--i:1">Smaller than steel. <span class="grad">Bigger than a nation.</span></h2>
   <div class="grid" style="grid-template-columns:1.3fr 1fr;align-items:center">
@@ -506,8 +497,7 @@ h2{align-self:flex-start;background:rgba(255,255,255,.8);backdrop-filter:blur(8p
 
 <!-- 10 STORY 1: MANSFIELD -->
 <section class="slide">
-  <div class="who wP"><em>03 · PATHOS</em>Md Asiful Islam</div>
-  <div class="appeal pathos r" style="--i:0"><b>PATHOS 1</b><span>Real-life stories</span><em>Perspective of the affected</em></div>
+  <div class="who wP"><em>03</em>Md Asiful Islam</div>
   <div class="tag r" style="--i:0">Mansfield, Georgia · USA</div>
   <h2 class="r" style="--i:1">Then the taps <span class="grad">ran dry.</span></h2>
   <div class="grid" style="grid-template-columns:1.5fr 1fr;align-items:center">
@@ -535,8 +525,7 @@ h2{align-self:flex-start;background:rgba(255,255,255,.8);backdrop-filter:blur(8p
 
 <!-- 11 STORY 2: MEMPHIS + THE DALLES -->
 <section class="slide">
-  <div class="who wP"><em>03 · PATHOS</em>Md Asiful Islam</div>
-  <div class="appeal pathos r" style="--i:0"><b>PATHOS 1</b><span>Real-life stories</span><em>Perspective of the affected</em></div>
+  <div class="who wP"><em>03</em>Md Asiful Islam</div>
   <div class="tag r" style="--i:0">Boxtown, Memphis · The Dalles, Oregon</div>
   <div class="qt r" style="--i:1">“How come I can’t breathe at home and y’all get to breathe at home?”<cite>Alexis Humphreys, Boxtown resident, holding her inhaler at a public hearing <span class="v">[22]</span></cite></div>
   <div class="grid">
@@ -557,8 +546,7 @@ h2{align-self:flex-start;background:rgba(255,255,255,.8);backdrop-filter:blur(8p
 
 <!-- 12 SEVERITY -->
 <section class="slide">
-  <div class="who wP"><em>03 · PATHOS</em>Md Asiful Islam</div>
-  <div class="appeal pathos r" style="--i:0"><b>PATHOS 2</b><span>Emotional words &amp; phrases</span><em>Severity of the problem</em></div>
+  <div class="who wP"><em>03</em>Md Asiful Islam</div>
   <div class="tag r" style="--i:0">What is at stake</div>
   <h2 class="r" style="--i:1">Whose children <span class="grad">will pay the price?</span></h2>
   <div class="grid" style="grid-template-columns:1fr 1.5fr;align-items:center">
@@ -587,8 +575,7 @@ h2{align-self:flex-start;background:rgba(255,255,255,.8);backdrop-filter:blur(8p
 
 <!-- 13 CALL TO ACTION -->
 <section class="slide">
-  <div class="who wP"><em>03 · PATHOS</em>Md Asiful Islam</div>
-  <div class="appeal pathos r" style="--i:0"><b>PATHOS 2</b><span>Emotional words &amp; phrases</span><em>Call for immediate action</em></div>
+  <div class="who wP"><em>03</em>Md Asiful Islam</div>
   <div class="tag r" style="--i:0">Act now</div>
   <h2 class="r" style="--i:1">Every prompt has a place <span class="grad">and a price.</span> <span class="emo">Act now.</span></h2>
   <div class="grid">
@@ -615,7 +602,7 @@ h2{align-self:flex-start;background:rgba(255,255,255,.8);backdrop-filter:blur(8p
 <!-- 14 CLOSING -->
 <section class="slide">
   <div class="tag r" style="--i:0">Final thought</div>
-  <h1 class="r" style="--i:1">Nothing in the cloud<br><span class="grad">is weightless.</span></h1>
+  <div class="titlebox r" style="--i:1"><h1 class="ttl" style="font-size:clamp(46px,6.4vw,112px)">Nothing in the cloud<br><span class="grad">is weightless.</span></h1></div>
   <div class="lines r" style="--i:2"><span>Money moved faster than safeguards</span><span>Communities are paying</span><span>We decide what happens next</span></div>
   <p class="note r" style="--i:3">One more thing →</p>
   <div class="sn" data-who="Asiful" data-t="8:50 – 9:00">
@@ -640,8 +627,8 @@ h2{align-self:flex-start;background:rgba(255,255,255,.8);backdrop-filter:blur(8p
 <!-- THANK YOU -->
 <section class="slide thanks">
   <div class="tag r" style="--i:0">ENG111 · North South University</div>
-  <h1 class="r" style="--i:1">Thank you<br><span class="grad">for your attention.</span></h1>
-  <p class="sub r" style="--i:2">Questions &amp; discussion are welcome 🙌</p>
+  <div class="titlebox r" style="--i:1"><h1 class="ttl">Thank you<br><span class="grad">for your attention.</span></h1>
+  <p class="tsub">Questions &amp; discussion are welcome 🙌</p></div>
   <div class="team r" style="--i:3">
     <div><b>Md. Azmine Amin Mormo</b><span>ID 2312318042</span></div>
     <div><b>Md. Faisal Sheikh</b><span>ID 2311554642</span></div>
