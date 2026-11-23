@@ -254,6 +254,15 @@ nav .ar{color:#334155}
 .r:has(> .orb){background:none;border:0;box-shadow:none}
 .thanks .titlebox h1.ttl{font-size:clamp(52px,8vw,140px)}
 
+/* roadmap + SDG cards */
+.grid.rm .card{padding:1.6vh 1.2vw}
+.grid.rm .card h3{margin-bottom:.2em}
+.grid.rm .ap-chip{margin:.2em 0 .5em}
+.sdg{border-top:6px solid var(--c)!important;padding:1.6vh 1.2vw}
+.sdg-h{display:flex;align-items:center;gap:.6em;margin-bottom:.6em}
+.sdg-h b{display:grid;place-items:center;min-width:2.2em;height:2.2em;padding:0 .3em;border-radius:10px;background:var(--c);color:#fff;font-weight:900;font-size:clamp(18px,1.2vw + .9vh,32px)}
+.sdg-h span{font-weight:800;color:var(--fg);font-size:clamp(17px,1.05vw + .85vh,29px);line-height:1.15}
+
 </style>
 <style>
 /* white 3D scene — veil almost removed so the animation shows */
@@ -301,16 +310,22 @@ nav .ar{color:#334155}
 <section class="slide">
   <div class="who wE"><em>01</em>Md. Azmine Amin Mormo</div>
   <div class="tag r" style="--i:0">Roadmap · 9 minutes</div>
-  <h2 class="r" style="--i:1">Three speakers. <span class="grad">One argument.</span></h2>
-  <div class="grid">
-    <div class="card r time" style="--i:2"><h3>Md. Azmine Amin Mormo<small>3 min</small></h3><div class="ap-chip ethos">ETHOS · Renowned sources + Fair-minded</div><ul class="pts"><li>What the “cloud” really is</li><li>Why it cannot wait</li></ul><b></b></div>
-    <div class="card r time" style="--i:3"><h3>Md. Faisal Sheikh<small>3 min</small></h3><div class="ap-chip logos">LOGOS · Facts &amp; statistics + Comparison</div><ul class="pts"><li>What is driving the boom</li><li>Who pays the most</li></ul><b></b></div>
-    <div class="card r time" style="--i:4"><h3>Md Asiful Islam<small>3 min</small></h3><div class="ap-chip pathos">PATHOS · Real-life stories + Emotional words</div><ul class="pts"><li>The people living next door</li><li>What we must do now</li></ul><b></b></div>
+  <h2 class="r" style="--i:1;font-size:clamp(28px,3.6vw,56px)">Three speakers. <span class="grad">One argument.</span></h2>
+  <div class="grid rm">
+    <div class="card r" style="--i:2"><h3>Md. Azmine Amin Mormo<small>3 min</small></h3><div class="ap-chip ethos">ETHOS · Renowned sources + Fair-minded</div><ul class="pts sm"><li>What the cloud is · why act now</li></ul></div>
+    <div class="card r" style="--i:3"><h3>Md. Faisal Sheikh<small>3 min</small></h3><div class="ap-chip logos">LOGOS · Facts &amp; statistics + Comparison</div><ul class="pts sm"><li>What drives it · who pays most</li></ul></div>
+    <div class="card r" style="--i:4"><h3>Md Asiful Islam<small>3 min</small></h3><div class="ap-chip pathos">PATHOS · Real-life stories + Emotional words</div><ul class="pts sm"><li>The people affected · what we must do</li></ul></div>
   </div>
-  <div class="sn" data-who="Azmine" data-t="0:20 – 0:35">
+  <div class="tag r" style="--i:5;margin-top:3vh">The SDGs we address</div>
+  <div class="grid sdgs">
+    <div class="card sdg r" style="--i:6;--c:#26bde2"><div class="sdg-h"><b>6</b><span>Clean Water &amp; Sanitation</span></div><ul class="pts sm"><li>AI cooling drains <b>fresh water</b> from nearby towns</li></ul></div>
+    <div class="card sdg r" style="--i:7;--c:#e5a800"><div class="sdg-h"><b>7</b><span>Affordable &amp; Clean Energy</span></div><ul class="pts sm"><li>Data centres strain grids; they need <b>clean power</b></li></ul></div>
+    <div class="card sdg r" style="--i:8;--c:#3f7e44"><div class="sdg-h"><b>13</b><span>Climate Action</span></div><ul class="pts sm"><li>Rising emissions hit <b>Bangladesh</b> and the vulnerable first</li></ul></div>
+  </div>
+  <div class="sn" data-who="Azmine" data-t="0:20 – 0:45">
     <ul>
-      <li>Keep this to 15 seconds: one line per speaker.</li>
-      <li>Signal the sequence: “First… then… finally…”.</li>
+      <li>One line per speaker: “First… then… finally…”.</li>
+      <li>Then the SDGs in one breath: water (SDG 6), clean energy (SDG 7), climate action (SDG 13).</li>
     </ul>
     <div class="tr">Transition: “Let me begin with a simple question.”</div>
   </div>
